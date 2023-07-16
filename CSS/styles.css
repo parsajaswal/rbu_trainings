@@ -1,0 +1,20 @@
+/* h1{
+    color: blue;
+} */
+/* css.phone , css.desktop , css.tablet */
+
+/* CSS Selector :- interview question */
+/* a. Element selector _ selects element based on the name  */
+/* b. ID_Selector - select the element based on the id   # use */
+/* c. class selector - selects the elements based on the class name
+#para-one , #para-two  */
+/* .mypara
+ */ 
+ /* question 1. what if same id applied to multiple elements 
+ question 2. what will happen if an elements contains styles for the id and styles for class  */
+ /* perference goes to id 
+element specific :- perference  1 id , 2 class , 3 mypara (element selector) 
+above all preference most preference give to inline elements */
+/* d. attribute selectors :-  */
+/* e. pseudo selectors */
+
