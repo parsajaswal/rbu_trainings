@@ -15,6 +15,122 @@
  /* perference goes to id 
 element specific :- perference  1 id , 2 class , 3 mypara (element selector) 
 above all preference most preference give to inline elements */
-/* d. attribute selectors :-  */
-/* e. pseudo selectors */
+/* d. attribute selectors :- use for specific element  */
+/* ElementName[attributeName condition] */
+/* want to find the <a> whose href :start with https:// */
+/* ^ -> starts with 
+$ -> ends with 
+* -> conatains 
+selectors case :- sqaure bracket means attribute elements */
+/* a[href^ = https://]
+{
+    color: "yellow";
+} */
 
+/* e. pseudo selectors  :- not select in direcly way but select in another way*/
+
+  /* Color & Gradients (color) */
+  /* Colors is CSS can be defined in 3 ways :- 1. Name color 
+  2. Hex Code 
+  3. RGB() */
+
+
+  /* 1. Selectors 
+  selector {cssProperty : cssValue;}
+  a) Element Selector - selects element based on the name */
+  h1
+  {
+    color: blueviolet;
+  }
+  /* b) id Selector - Selects the element based on the id. */
+  /* hover use when we take the cursor on he text then chnge color */
+  #Heading-One:hover  
+  {
+   color: black;
+  }
+  /* c) Class Selector - selects the elements based on the class name
+  #para_one , #para_two , #para_three
+  {
+    color : gray;
+  } */
+  .mypara
+  {
+    color: gray;
+  }
+  /* /* d) Attribute Selector
+  Element name[attributeName condition 
+  I want to find the <a> whose href start with https:// 
+  img[src^="https://"]{}
+   */
+   /* ^ -> starts with 
+   $ -> ends with 
+   * -> contains */
+   a[href^= "https://"]
+   {
+    color: yellow;
+   }
+   a[href$=".jpg"]
+   {
+    color: brown;
+   }
+   /* a[href*="/"]
+   {
+    color: aquamarine;
+   } */
+   /* img[src^="https://"]
+   {
+    border: 10px solid;
+   } */
+   /* img[src^="./"]
+   {
+    border: 10px solid;
+   } */
+   img[src^="d"]
+   {
+    border: 10px solid;
+   }
+   /* e) Pseudo Selectors
+   elementName : pseudoProperty{...} */
+   /* li:first-child
+   {
+    color: plum;
+   } */
+   .ordered-list-item:first-child
+   {
+    color: brown;
+   }
+   .unordered-list-item:last-child
+   {
+     color: aqua;
+   }
+   .ordered-list-item:nth-child(3)
+   {
+    color: blue;
+   }
+   /* Colors & Gradients */
+   /* color is css can be defined in 3 ways :- 1. Name color 2. Hex code , 3. rgb() */
+   h1
+   {
+    /*  color: #7c3b82; */
+    /* color: rgb(124, 59, 130); */
+    background-color: black;
+    color: white;
+   }
+   #container-one
+   {
+    width: 400px;
+    height: 400px;
+    /* background-color: blueviolet; */
+    background: linear-gradient( to left ,white,red
+    ,brown,orange , black);
+    /* 360 deg , to right , to top , to bottom  */
+    /* 0deg = bottom */
+   }
+   /* Unit of Measurements */
+   
+
+
+   
+
+  
+  

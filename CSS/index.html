@@ -1,18 +1,30 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
     <!-- Meta data of the Document -->
     <head>
+        <!-- <style> 
+            2. Internal CSS (use style as an element)
+         selector {cssProperty: cssValue;} 
+        h1
+        {
+            color: blueviolet;
+        }
+        </style> -->
+        <!-- 3. External CSS (use style.css file as an element) -->
+        <link rel="stylesheet" href="./styles.css">
         <title>
             HTML Basics
         </title>
-        
     </head>
     <body>
          <!-- This is simple text .This is change . Another Change  -->
         <!-- HTML 5 Elements  -->
         <!-- Heading elements {h1 - h6} testsize(h1) > test size(h6) -->
-        <!-- inline css -->
-        <h1 style="color: aqua;"> My Introduction</h1>
+        <!-- <h1 style="cssProperty : cssValue"></h1> -->
+        <!-- 1. Inline CSS (use style as an element) -->
+        <!-- <h1 style="color: blue;"> My Introduction</h1> -->
+        <h1 id="Heading-One"> My Introduction</h1>
+        <h1> Extra H1 </h1>
         <hr/>  <!--  self ending tag hr,br,img --> 
         <!-- <h2>Heading -2</h2> 
         <h3>Heading -3</h3>
@@ -20,32 +32,43 @@
         <h5>Heading -5</h5>
         <h6>Heading -6</h6> -->
         <!-- Paragraphs -->
-        <p> My name is  <b>PARSA</b>. I am from Una , Himachal Pardesh . <br> I am pursuing my <i> B.Tech CSE </i> with 
+        <!-- <p style="color: green;"> -->
+        <!-- <p style="color: aqua;"  id="Heading-One" class="mypara"> -->
+        <p id="Heading-One" class="mypar">
+              My name is  <b>PARSA</b>. I am from Una , Himachal Pardesh . <br> I am pursuing my <i> B.Tech CSE </i> with 
             specialization in <i>Artificial Intelligence </i> from <span style="background-color: antiquewhite;">Rayat Bahra University </span>.
         </p>
-        <p>I complete my higher studies from  <u>DAV Senior Secondary School Una </u>.
-            I am quick learner . My hoobies are dancing, drwaing ,taveling .
+        <p class="mypara">I complete my higher studies from  <u>DAV Senior Secondary School Una </u>.
+            I am quick learner . My hoobies are dancing, drwaing ,tarveling .
+        </p>
+        <p class="mypara"> I  don't want to write this paragraph but somehow i create 
+            this for one paragraph and moreee .... 
+        </p>
+        <p id="para_four">
+        Here's how to cut down on digital distraction to boost 
+        your productivity..... Invest in your self ..... put your priority first ...
+        and so onnnnnnnn......
         </p>
             
     </body>
 
         <h3>Lists - </h3>
         <!-- Ordered List (ol) -->
+        <!-- <ol id="ordered-list"   type="a"> -->
         <ol type="a">
-            <li>Item-1</li>
-            <li>Item-2</li>
-            <li>Item-3</li>
-            <li>Item-4</li>
-            <li>Item-5</li>
+            <li class="ordered-list-item">Item-1</li>
+            <li class="ordered-list-item">Item-2</li>
+            <li class="ordered-list-item">Item-3</li>
+            <li class="ordered-list-item">Item-4</li>
+            <li class="ordered-list-item">Item-5</li>
         </ol>
         <!-- Unorderd List (ul) -->
         <ul>
-            <li>Item-1</li>
-            <li>Item-2</li>
-            <li>Item-3</li>
-            <li>Item-4</li>
-            <li>Item-5</li>
-            <li>Item-6</li>
+            <li class="unordered-list-item">Item-1</li>
+            <li class="unordered-list-item">Item-2</li>
+            <li class="unordered-list-item">Item-3</li>
+            <li class="unordered-list-item">Item-4</li>
+            <li class="unordered-list-item">Item-5</li>
         </ul>
         <hr>
         <h3>Anchors - </h3>
@@ -55,6 +78,10 @@
         to see the image. </p>
         <p> Click <a href="./second.html"> here </a> to visit page 2.</p>
         <hr>
+        <div id="container-one">
+
+
+        </div>
         <!-- Self Ending Elements -->
         <h3>Images -</h3>
         <!-- Links:
@@ -64,14 +91,15 @@
         <!-- there exits elements which do not requie extra space for rendering , such
         elements are called INLINE elements -->
         <!-- Absolute Link -->
-        <img src= "data:image/jpeg;base64,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" alt="Image One" />
+        <img src= "data:image/jpeg;base64,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"  />
          <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShjbty9YWIB0tU760D1s9rp3yB6Yhbq_LEdQ&usqp=CAU" > -->
          <hr>
-         <img src="./assets/images.jpg" alt="Image Two">
+         <img src="./assets/images.jpg" >
+         <!-- <img src="./assets/images.jpg" alt="Image Two"> -->
         <!-- <img src="../" alt=""> -->
         <hr>
         <h3>Tables -</h3>
-        <table>
+        <table border="1">
             <tr>
                 <!-- <td>Emp_ID</td> -->
                 <th> Emp_ID </th>
@@ -157,17 +185,23 @@
             <div> <input type="submit" value="Sign Up"> </div>
         </form>
         <hr>
-        <!-- <h3>HTML%5Videos</h3> -->
-        <!-- <h5>1. Videp -</h5>  -->
+        <h3>HTML5 MultiMedia- </h3> 
+        <h5>1. Video -</h5>  
         <!-- download video make folder then implement  -->
-        <!-- <video src=""></video> -->
+        <video src="./assets/myvideo/jerry.mp4" controls> </video>
         <hr>
-        <!-- <h4>2 Audio -</h4> -->
+         <h4>2. Audio -</h4> 
+         <audio src="./assets/myaudio/audio.mpeg" controls></audio>
         <hr>
-        <!-- <h3>Google Map:- </h3> -->
+         <h4>3. Google Map:- </h4> 
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3427.7713905111764!2d76.61676237412034!3d30.780995083301182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ffa9485c539a5%3A0x7e32a159650281bc!2sRayat-Bahra%20University!5e0!3m2!1sen!2sin!4v1689502260665!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         <hr>
-        <!-- <h4>Youtube Videos -</h4> -->
-        <!-- <iframe src="" frameborder="0"></iframe> -->
+         <h4>4. Youtube Videos -</h4> 
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/t0Q2otsqC4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+         </iframe>
+         <hr>
+        
         <h3> HTML5 Semantics - </h3>
         <div>
             <!-- Header  -->
