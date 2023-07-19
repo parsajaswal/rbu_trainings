@@ -34,17 +34,29 @@ selectors case :- sqaure bracket means attribute elements */
   2. Hex Code 
   3. RGB() */
 
-
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
   /* 1. Selectors 
   selector {cssProperty : cssValue;}
   a) Element Selector - selects element based on the name */
+  body{
+    background: linear-gradient(to bottom, rgba(162, 193, 242, 1) , rgba(162,193,242,0));
+    font-family: 'Roboto' , sans-serif;
+    font-size: 0.9em;
+  }
   h1
   {
     color: blueviolet;
+    text-align: center;
+    font-size: 3em;
+    /* text-shadow: horizonatl , vertical , blur radius , color(srgb red green blue); */
+    text-shadow: 10px 10px 8px black  ;
+    /* when give negative value then it reverse right to left but not in blur radius  */
   }
   /* b) id Selector - Selects the element based on the id. */
   /* hover use when we take the cursor on he text then chnge color */
-  #Heading-One:hover  
+  /* hover is pseudo selector */
+  /* #Heading-One:hover   */
+  #Heading-One
   {
    color: black;
   }
@@ -65,6 +77,13 @@ selectors case :- sqaure bracket means attribute elements */
    /* ^ -> starts with 
    $ -> ends with 
    * -> contains */
+   /* property :- text decoration */
+   a
+   {
+    text-decoration: none;
+    /* text-decoration: dashed; */
+    /* text-decoration: line-through; */
+   }
    a[href^= "https://"]
    {
     color: yellow;
@@ -109,13 +128,23 @@ selectors case :- sqaure bracket means attribute elements */
    }
    /* Colors & Gradients */
    /* color is css can be defined in 3 ways :- 1. Name color 2. Hex code , 3. rgb() */
-   h1
+   /* h1
    {
+    /* 1. linear gradient  */
     /*  color: #7c3b82; */
     /* color: rgb(124, 59, 130); */
-    background-color: black;
-    color: white;
+    /* background-color: black;
+    color: white; 
+   } */
+   /* Unit of Measurements 
+   p{
+    font-size: 18px;
+    font-size: 5cm;
+    font-size: 1.1em;
    }
+   img {
+    height: 720px;
+    width: 75%; }*/
    #container-one
    {
     width: 400px;
@@ -127,6 +156,153 @@ selectors case :- sqaure bracket means attribute elements */
     /* 0deg = bottom */
    }
    /* Unit of Measurements */
+   /* Category : 1. Absolute Unit :- which is not zero  eg:-(pixel px) , cm , mm , inc
+    2. Relative Unit :- (em)  */
+    p{
+      font-size: 18px ;
+    }
+    /* Relative unit   */
+    /* p{
+      font-size: 1.2em;
+    } */
+    /* p{
+      font-size: 5cm;
+    } */
+    /* find the difference between em and rem ? */
+    /* Converting div into box */
+    /* absolute link
+    img
+    {
+      width: 500px;
+      height: 500px;
+    } */
+    /* relative link */
+    img
+    {
+      width: 75%;
+      height: 50% ;
+    }
+    /* Box-Model */
+    #form-email , #form-name , #form-pwd
+    {
+      width: 100%;
+    }
+    .form-items
+    {
+      margin: 8px;
+    }
+    form
+    {
+      /* border: widthofborder style color; */
+      /* style :- 1. solid , 2. dotted , 3. dashed , 4. double */
+      border: 3px solid gray;
+      /* padding: a-px;
+      padding: a-px , b-px; a-> top-bottom | b-> left-right
+      padding: a=px , b=px , c=px , d=px; a-> top | b-> right | c-> bottom | d-> left  */
+      padding: 10px;
+      padding: 10px 5px;
+      padding-top: 5px; padding-right: 10px; padding-bottom: 15px; padding-left: 20px;
+      padding: 5px 10px 15px 20px;
+      /* Note:- padding & margin are both parent properties -> they also have sub-properties associated with them */
+      /* padding-left: ; padding-top: ; padding-bottom: ; padding-right: ; margin-top: ; margin-bottom: ; margin-left: ; margin-right: ; */
+     }
+    #img-one
+    {
+      /* border: width of border styles and color; 
+      thickness , style , color of border*/
+      /* border: 5px  solid red  ; */
+      /* border: 5px dotted black;  */
+      /* border: 5px double black; */
+      /* border: 5px dashed black; */
+      border: 5px double black ;
+      /* padding:  10px;  */
+      /* padding: a-px , b - px , a-> top bottom  , b-> left-right; */
+      /* padding: 10px 5px; */
+      /* padding: a- px , b- px , c- px , d- px , a-> top , b-> right , c->bottom , d->left; */
+      padding: 10px 20px 30px 40px;
+      margin: 10px;
+      /* margin: a-px , b - px , a-> top bottom  , b-> left-right; */
+      /* margin: 10px 5px; */
+      /* margin: a- px , b- px , c- px , d- px , a-> top , b-> right , c->bottom , d->left; */
+
+    }
+     /* Background */
+     #container-two
+     {
+      width: 65%;
+      height: 500px;
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKWxFYUbNoVlOgiDhAWPB7mOm1LumiiSMpBg&usqp=CAU');
+      /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKWxFYUbNoVlOgiDhAWPB7mOm1LumiiSMpBg&usqp=CAU'); */
+      /* background-size: 400px 350px; */
+      /* background is parent property , background-size is child property */
+      background-size: cover;
+      /* Variation  :- 1. color*/
+      /* background: red; */
+      background-repeat: no-repeat;
+      /* background-size: 100% , background-size: auto , background-size: cover; */
+     }
+     #container-three
+     {
+      width: 65%;
+      height: 400px;
+      /* Note :- If no direction is provided , default is top to bottom | directions :- bottom , top ,right , left */
+      /* background: linear-gradient(direction, black, red, blue, green,yellow,white);
+      background: linear-gradient(to left, black, red , blue , gray, yellow,white );*/
+      /* Note:- You can specify the directions using deg values (odeg) statrs from bottom reaches to top */
+      background: linear-gradient(360deg , black , red , blue ,gray,pink , white);
+      /* Colors:-moz-animation: 1. Named colors 2. hex code 3. RGB(red,green,blue) 4. RGBA() -> (red ,green ,blue ,absolute) ->abs[0-1]; */
+      
+     }
+     #container-four
+     {
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle , black 10%, red 20%, blue 25% , green 20% , yellow 80%, white 90%);
+     }
+     /* Gradient - 1. */
+     /* Fonts & Font-Family */
+     /* CSS Flex Box */
+     #container
+     {
+      display: flex;
+      /* default : left-right */
+      /* flex-direction: row; default value */
+      /* flex-direction: column; */
+      flex-direction: row;
+      /* flex-direction: row-reverse;
+      flex-direction: column-reverse; */
+      /* comes in left in side */
+      flex-wrap: wrap;
+      /* for right in side */
+      /* parent class flex then use justify-content */
+      /* left side default
+      justify-content: flex-start; */
+      /* justify-content: flex-end;     */
+      /* Question :- Create a div and align the div and the content of the div to centre of the page */
+      /* justify-content: center; */
+      /* justify-content: space-between; */
+      justify-content: space-around;
+
+     }
+     .container-items
+     {
+      /* display: block; */
+      width: 100px;
+      height: 100px;
+      font-size: 6em;
+      text-align: center;
+      background: black;
+      color: white;
+      margin: 15px;
+     }
+     /* bootstrap :- it is framework , give a option plug and play ,  */
+     
+
+
+
+
+ 
+
    
 
 

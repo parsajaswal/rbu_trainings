@@ -16,15 +16,16 @@
             HTML Basics
         </title>
     </head>
-    <body>
-         <!-- This is simple text .This is change . Another Change  -->
+    <body>   
+         <!--  Plain text : This is simple text .This is change . Another Change  -->
         <!-- HTML 5 Elements  -->
+        <!-- HTML5 Block Level Elements -> All the HTML elements have some default styles. -->
         <!-- Heading elements {h1 - h6} testsize(h1) > test size(h6) -->
         <!-- <h1 style="cssProperty : cssValue"></h1> -->
         <!-- 1. Inline CSS (use style as an element) -->
         <!-- <h1 style="color: blue;"> My Introduction</h1> -->
         <h1 id="Heading-One"> My Introduction</h1>
-        <h1> Extra H1 </h1>
+        <!-- <h1> Extra H1 </h1> -->
         <hr/>  <!--  self ending tag hr,br,img --> 
         <!-- <h2>Heading -2</h2> 
         <h3>Heading -3</h3>
@@ -78,11 +79,24 @@
         to see the image. </p>
         <p> Click <a href="./second.html"> here </a> to visit page 2.</p>
         <hr>
-        <div id="container-one">
-
-
-        </div>
-        <!-- Self Ending Elements -->
+        <div id="container-one"> </div>
+        <hr>
+      <!-- flex box :- container -->
+      <div id="container">
+        <div class="container-items"> A</div>
+        <div class="container-items">B</diV>
+        <div class="container-items">C</div>
+        <div class="container-items">D</div>
+        <div class="container-items">E</div>
+        <div class="container-items">F</div>
+        <div class="container-items">G</div>
+        <div class="container-items">H</div>
+        <div class="container-items">I</div>
+        <div class="container-items">J</div>
+        <div class="container-items">K</div>
+      </div>       
+      <hr>
+       <!-- Self Ending Elements -->
         <h3>Images -</h3>
         <!-- Links:
         1. Absolute Link
@@ -91,7 +105,7 @@
         <!-- there exits elements which do not requie extra space for rendering , such
         elements are called INLINE elements -->
         <!-- Absolute Link -->
-        <img src= "data:image/jpeg;base64,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"  />
+        <img id="img-one" src= "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTEhIVFRUVFRUXFxcXFxcXFRUXFxUXHRcVFxcYHSggGB0lHRcVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFw8QFS0dHR83Ky8rLy0wKy4uKzcuMC0tLTIvKyswKysrLS0rLSsrLTctKy03LS0rLSsrKystLS0tK//AABEIAQMAwgMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QANxAAAgIABAMGAggGAwAAAAAAAAECEQMSITEEQVEFImFxgZEyoRNCUmJyscHwgpLC0dLhBhQj/8QAGgEBAQADAQEAAAAAAAAAAAAAAAECBAUDBv/EACARAQACAgMBAQADAAAAAAAAAAABAgMRBCExEiIFQWH/2gAMAwEAAhEDEQA/ACwsQNn0TmGCBgAwFQ0A2JBYkAwAAAVjZIA2S2MlsCWQ2UyJMCZMhspkBSbFYMQAAhgAAhgCYBlAD0BiABjQkADAQAMEAAMKECALJAAhMhspkMBSZEhshgJkNjYmFSwsLEAAABTQxAENV0APQQHo2AgDI7GIAhghDQAAWAAgEMIGSxiYEsljkQwJZDLbM2BLExksBWDAVhQMQAUAkMIVAUAHeAgDIwsVjAbAQEQx2JAgAYAyoTJZQmgiWQy5ESAzZEjSSM2FSyWNiYEhQxWFABYAMEIYDEFeABHfYCbEGSkwJBBF2Fk2NMgodkgioqwEOwATGIIlkMpslgQyGXIhhUMmRTJAkGMQUgsYMABCHYBXiAe/yGB2WKxWKwqgsmwsIuxmdlWBaY7ITGEWmVZA0EOwEgsBMhlsloCGQymSwIZLLZDQVIimSFIbAAExiAAsAoAOlsLIsLAqwzEWFgXZSZmmNAaJlJmaZVhGljshMoIoZKY0AWIbJYEyIZbJYVm0SzRkNBUCKaE0BIiiQAAAAGIALsGyUwAdjsmwsCrKTIsYF2WmZWUmEaItGSZaAtMqyBgVYBYAIhlslgQyGaMloKzZJoyGBLEUxASIpoQCGIYCCxAAWOxDAYyRgUUmQikBomWmZopAaIpEIoIpDEMKBUNgBFEs0ZLRBkyTRoloqs2JlsloCAKoTCJGOgAyAACmArGgGCEhoCkNCRUQikWiUiogUjREItICkNCQwCgaNIQKlhEGFE0bfRkSiBlRLNKJaKrNomjRoloDOhUW0JoCQKEBiJlUFASOh0FAIaQIYDRSJSLSApFozckk29Elb8jgniSnvaXKP+XV+Gx5Zctccdvfj8e+adVepGaurXubI+cxuDVd1JeH1X4eBp2f2i4VbuD3vePvslzRr05kTbVo0983AvjjcTt9AUkJHPjcYk8sVnnzS2j+KW0fz6Jm5MxHrQiJl6HC4mVp9GmdvGcYp0kqinfq92fPf9yK+PGgvuxapeber+R0YPH4cnUcSDfRSV+x57rM+s/1EePosHDw/o05JXr5tnHicBLLmSta+iXU4J8XGFZpRjfVpe1nSuOk45VLu+HO/EamJ6ldxMdw4poijWbIaPRgzolo0YqKM2hFtCAihjrwGBzAXQqAmgodBQCoaHQUAJFISiUkBz9ovupfalFe2v8ASYI37RXwfj/okYnN5U/t3P42NYpn/QefjxqbXKSzeq0l/T7s9A5OO3g/Fr3i3+iNS0dN3LG6nHtGaw1hJ1X1ubjyS8tvTxOJ4b2zab1vb666fI1aFZhbLa3stKuGlfIGC2nrVfhi2v51K/kdWJ2jL4cOVabyw4qS/Dl0066nMKcE1TMq571jUSxtx6TO5hWFg523y5yespeTf5nudiRqEktlN1/LFv5t+7PMwcW0kl3ryqK5vkl4c/BHv8JgZIKO7W76tu2/c3OHT9TZ5c+aVx1pHstGKimhUdJykMVF0SwIoTRdCoKQi8oBHPQmjRoTQEUKjShUBCCi2gSASRSQJFIDm7Qj/wCbf2Wpeievys5Ueqonk42H9E6fw/Vlyr7LfJr5+5o8vHPVodT+NzxXeOZ98Y8LKrg94aecfqv2080zHjJXJLpq/VNL9fY34mEWrlSq6d1V+Jww0Wi81zvn6nPvOodLJOo+VESi+T9NK/KycSdtLq/LZN/oRGWSk71S+W55PDbeLtJ7Duh0S4rmiMnd2BNPFut4Ono6qS2p883yPoj5Hg+JlBuUKVqk6T05teensisXjcSS1xJvno3FO+fcSteVnQwcquPH8zG5c7PxrZMn1vUPqpNLmkDPE7P7HUsuJKSknlmqTt81blqe4dDHa1o3aNNK9a1nUTtLFRVAejBLQDoApZBgAGVBRpQqCM2hUaUDRBnQUXQn5AJIaMnxCW8Zr+GT+as1w5qStNNdVqhuBQ6GkTjY8YLNN0v3ourEzr1GT4XCgnifRwSjq2opV5e585xU3OUp/C5O65eq5+Z2do9ovFqKWWCdpc5Pk5f2OPC72zTORys8Xn5r5Dq8XBNf1f2XLOctNrTXd1u/Dwq9T0OF4H6acYZksz5/dTfL0KhwvNr5avwXXyOXiOy8Z4l6RaaSWZKUOml3m56dVTNatdy2p69l2cdw0oR+F/HKGsXF5lrotU1WqafsefhYTlKMNVd33Z60rqlb2T9j3+K4PExIwjlvKlcsXEcpt89ry+S39NXwXZLw3nzXJX3XeRX0e9+PyNjHxb2tG69NXJyaxWdW3KeE4LAjWeWaX31lX8MJf7O7i+Cw8Ss8by7U2tHydbrRaeBpHFTeWSp9Hz/DyaKw4KKqKSXRKl8jqVx1iPmIjTmze0zuZ7NKtFolt0oAYHoxIBiKoaBgBAX+7EAAOhNFgwxZ0BdAFQoiotBQEmGNwUJPNrGX2otxl6tb+TtHTQyTET6beXiSx8JN6Y0Fu9IzS8a0fovQ8nH4p4rzyVad2P2V08+v+j6fHws0ZRus0Wr6WqPlZQcW4yVSjo/7rqnyOfzYtWIiJnUt/hfNrTMx3BwR9D2D2LHF72JFNLa1z/0fPKN+Hit0fY9g9r4aw6nKEHCk7aSa5SVvnr6pmhSI3237zMV6ephdlYWH3sPDhmrRv/LVpeR5OMu/lvN9G25SrR4s966KMXVfeXQvjf8AkSlKMMJNuTrO01GOjdpOnLby8eRnh4aiqXnb3bbtt9W3b9TocfHFrfX9Q5ue81jU+yYMBHQaBNddRgxBkGDAVBQJjEAAMCqKAQgNaBooTRGCWhNFA0FQBQBUpDodAEBx9ocBHFVvuyS0l+j6rw/I7Tn47hViwcG62131TtaczG9fqsxra0tq0TvT5fbpo2tHadPdPmgjivOq5Rd+rVfkzfi+z8WG60+1FZl7br1VeZ52Ilsm2+a3zenPyRwbUtWdTGncrkrau4nb2uycOU8SMvqwt3ybpxST57v2PoD5vsHGxFiKCUlDW4u6iknVWu7qoqttWfSHW4cRGPpyeXMzk7NiGSbbWAhg0RkVggEVToQMCAAGCAenQQAUayYSACMSkD/QACkwYAFA2tfYACEOIAEC/fuIACGJDABRD9/mAFCEnsAEZBE2ABV1+/QlgABEEAFEtgAAf//Z"  />
          <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShjbty9YWIB0tU760D1s9rp3yB6Yhbq_LEdQ&usqp=CAU" > -->
          <hr>
          <img src="./assets/images.jpg" >
@@ -129,6 +143,14 @@
           </tr>
         </table>
         <hr>
+        <div id="container-two">
+            <!-- <span>background-Image</span> -->
+
+        </div>
+        <div id="container-three"> 
+        </div>
+        <div id="container-four"></div>
+        <hr>
         <h3> HTML Signup Forms </h3>
         <form  action="https//www.myBE.php/"> 
             <!-- <form> -->
@@ -156,18 +178,32 @@
             <!-- <button onclick="alert('Btn Clicked!')"> Click Me ! </button> -->
             <!-- <button onclick="console.log('Btn Clicked')"> Click Me !</button>
             <input type="submit" value="Sign Up"> -->
-             <div> <input type="text" placeholder="enter your name.."></div> 
+             <div class="form-items" style="width: 90%;">
+              <input id="form-name" type="text" placeholder="enter your name..">
+             </div> 
             <!-- Email : - username@hostname.com -->
-            <div> <input type="email" placeholder="enter you email.."> </div>
-            <div> <input type="password" placeholder="enter your password"> </div>
-            <div> <input type="date" > </div>
-            <div> <span> Range :</span><input type="range" ></div>
-            <div> <label> Enter your gender:  </label> 
+            <div class="form-items" style="width: 90%;">
+             <input id="form-email" type="email" placeholder="enter you email.."> 
+            </div>
+            <div class="form-items" style="width: 90%;">
+                 <input id="form-pwd" type="password" placeholder="enter your password"> 
+            </div>
+            <div class="form-items">
+                <label> Date of Birth- </label>
+                 <input type="date" >  
+            </div>
+             <div class="form-items"> 
+                 <!--  <span> Range :</span> --> 
+                 <label> How well do you feel </label>
+                <input type="range" >
+            </div>
+            <!-- <div class="form-items">
+                 <label> Enter your gender:  </label> 
                 <input type="checkbox"> Male 
                 <input type="checkbox"> Female  
                 <input type="checkbox"> Others 
-            </div>
-             <div>
+            </div> -->
+             <div class="form-items">
                 <span> Enter your gender : </span>
                 <select >
                     <option > Male </option> 
@@ -175,14 +211,24 @@
                     <option > Others </option>
                 </select> <br> <br>
              </div>
-            <div> <label > Upload your CV - </label> </div>
-           <div>  <input type="file"> </div>
-            <div> <span> Color : </span><input type="color"> </div>
-            <div><input type="submit"> </div>
+            <div class="form-items">
+                 <label > Upload your CV - </label>
+             </div>
+           <div class="form-items"> 
+             <input type="file"> 
+           </div>
+            <div class="form-items"> 
+                <span> Color : </span> <input type="color">
+             </div>
+            <!-- <div><input type="submit"> </div> -->
             <!-- <input type="button"> -->
             <!-- <button onclick="alert('Btn Clicked!')"> Click Me ! </button> -->
-            <div> <button onclick="console.log('Btn Clicked')"> Click Me !</button> </div>
-            <div> <input type="submit" value="Sign Up"> </div>
+            <div class="form-items">
+                 <button onclick="console.log('Btn Clicked')"> Click Me !</button>
+            </div>
+            <div class="form-items">
+                 <input type="submit" value="Sign Up"> 
+            </div>
         </form>
         <hr>
         <h3>HTML5 MultiMedia- </h3> 
@@ -203,7 +249,7 @@
          <hr>
         
         <h3> HTML5 Semantics - </h3>
-        <div>
+        <div id="page">
             <!-- Header  -->
             <div id="Header"></div>
             <!-- Sidebar -->
